@@ -1,0 +1,108 @@
+{
+  "manufacturer": "ZinVolt",
+  "slug": "zinvolt",
+  "website": "https://zinvolt.com",
+  "batteries": [
+    {
+      "model": "Base ZVB2000",
+      "slug": "base-zvb2000",
+      "capacityWh": 4000,
+      "maxChargePowerW": 800,
+      "maxDischargePowerW": 2000,
+      "offGridPowerW": 2000,
+      "physical": {
+        "widthMm": 520,
+        "heightMm": 348,
+        "depthMm": 245,
+        "weightKg": 14.5
+      },
+      "electrical": {
+        "chemistry": "LiFePO4",
+        "cycleLife": 8000,
+        "warrantyYears": 10,
+        "ipRating": "65",
+        "noiseDb": 35,
+        "depthOfDischargePercent": 95,
+        "certifications": ["IEC 61000", "IEC 62477", "VDE4105", "EN50549", "C10/26", "IEC 62619"]
+      },
+      "features": {
+        "offGrid": true,
+        "ups": true,
+        "upsSwitchMs": 10,
+        "p1Meter": {
+          "type": null
+        }
+      },
+      "expansion": {
+        "expansionModel": "ZVS4000",
+        "expansionCapacityWh": 4000,
+        "maxUnits": 1,
+        "expansionPhysical": {
+          "widthMm": 520,
+          "heightMm": 305,
+          "depthMm": 245,
+          "weightKg": 29.5
+        }
+      },
+      "productUrl": "https://zinvolt.com/products/base",
+      "forumUrl": "https://gathering.tweakers.net/forum/list_messages/2285362",
+      "packages": [
+        {
+          "description": "Base ZVB2000",
+          "baseCount": 1,
+          "expansionCount": 0,
+          "offerings": [
+            {
+              "retailer": "ZinVolt",
+              "url": "https://zinvolt.com/products/base",
+              "price": 1899,
+              "p1Meter": { "available": false, "price": 0 },
+              "startDate": "2026-03-03",
+              "endDate": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "model": "Power",
+      "slug": "power",
+      "capacityWh": 1024,
+      "maxChargePowerW": 800,
+      "maxDischargePowerW": 800,
+      "offGridPowerW": null,
+      "physical": {
+        "widthMm": 210,
+        "heightMm": 430,
+        "depthMm": 323,
+        "weightKg": 19.1
+      },
+      "features": {
+        "offGrid": false,
+        "p1Meter": {
+          "type": null
+        }
+      },
+      "expansion": null,
+      "productUrl": "https://zinvolt.com/products/zinvoltpower",
+      "forumUrl": "https://gathering.tweakers.net/forum/list_messages/2285362",
+      "packages": [
+        {
+          "description": "Power",
+          "baseCount": 1,
+          "expansionCount": 0,
+          "offerings": [
+            {
+              "retailer": "ZinVolt",
+              "url": "https://zinvolt.com/products/zinvoltpower",
+              "price": 1099,
+              "p1Meter": { "available": false, "price": 0 },
+              "startDate": "2026-03-03",
+              "endDate": null
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "manufacturer": "Anker SOLIX",
+  "slug": "anker-solix",
+  "website": "https://www.ankersolix.com",
+  "batteries": [
+    {
+      "model": "Solarbank 2 E1600 AC",
+      "slug": "solarbank-2-e1600-ac",
+      "capacityWh": 1600,
+      "maxChargePowerW": 2400,
+      "maxDischargePowerW": 800,
+      "offGridPowerW": 1000,
+      "offGridPeakPowerW": 1200,
+      "physical": {
+        "widthMm": 460,
+        "heightMm": 249,
+        "depthMm": 254,
+        "weightKg": 21.8
+      },
+      "electrical": {
+        "chemistry": "LiFePO4",
+        "ipRating": "65"
+      },
+      "features": {
+        "hasMppt": true,
+        "solarInputW": 1200,
+        "solarConnections": 2,
+        "offGrid": true,
+        "p1Meter": {
+          "type": "Anker SOLIX P1 Meter"
+        }
+      },
+      "expansion": {
+        "expansionModel": "BP1600",
+        "expansionCapacityWh": 1600,
+        "maxUnits": 5,
+        "expansionPhysical": null
+      },
+      "productUrl": "https://www.ankersolix.com/nl/products/a17c2",
+      "forumUrl": "https://gathering.tweakers.net/forum/list_messages/2315764",
+      "packages": [
+        {
+          "description": "Solarbank 2 E1600 AC",
+          "baseCount": 1,
+          "expansionCount": 0,
+          "offerings": [
+            {
+              "retailer": "Anker SOLIX",
+              "url": "https://www.ankersolix.com/nl/products/a17c2",
+              "price": 599,
+              "p1Meter": { "available": true, "price": 0 },
+              "startDate": "2026-03-03",
+              "endDate": null
+            }
+          ]
+        },
+        {
+          "description": "Solarbank 2 E1600 AC + 1x BP2700",
+          "baseCount": 1,
+          "expansionCount": 1,
+          "offerings": [
+            {
+              "retailer": "Anker SOLIX",
+              "url": "https://www.ankersolix.com/nl/products/a17c2?variant=44638717706297",
+              "price": 1399,
+              "p1Meter": { "available": true, "price": 0 },
+              "startDate": "2026-03-03",
+              "endDate": null
+            }
+          ]
+        },
+        {
+          "description": "Solarbank 2 E1600 AC + 2x BP2700",
+          "baseCount": 1,
+          "expansionCount": 2,
+          "offerings": [
+            {
+              "retailer": "Anker SOLIX",
+              "url": "https://www.ankersolix.com/nl/products/a17c2?variant=44638717739065",
+              "price": 1899,
+              "p1Meter": { "available": true, "price": 0 },
+              "startDate": "2026-03-03",
+              "endDate": null
+            }
+          ]
+        },
+        {
+          "description": "Solarbank 2 E1600 AC + 3x BP2700",
+          "baseCount": 1,
+          "expansionCount": 3,
+          "offerings": [
+            {
+              "retailer": "Anker SOLIX",
+              "url": "https://www.ankersolix.com/nl/products/a17c2?variant=45180867641401",
+              "price": 2399,
+              "p1Meter": { "available": true, "price": 0 },
+              "startDate": "2026-03-03",
+              "endDate": null
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

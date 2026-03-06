@@ -1,0 +1,391 @@
+{
+  "manufacturer": "Zendure",
+  "slug": "zendure",
+  "website": "https://www.zendure.nl",
+  "batteries": [
+    {
+      "model": "SolarFlow 2400 AC",
+      "slug": "solarflow-2400-ac",
+      "capacityWh": 0,
+      "maxChargePowerW": 2880,
+      "maxDischargePowerW": 2880,
+      "offGridPowerW": 2400,
+      "physical": {
+        "widthMm": 448,
+        "heightMm": 282,
+        "depthMm": 230,
+        "weightKg": 36
+      },
+      "features": {
+        "offGrid": true,
+        "p1Meter": {
+          "type": null
+        }
+      },
+      "expansion": {
+        "expansionModel": "AB3000X",
+        "expansionCapacityWh": 2880,
+        "maxUnits": 6,
+        "expansionPhysical": {
+          "widthMm": 477,
+          "heightMm": 194,
+          "depthMm": 320,
+          "weightKg": 26.1
+        }
+      },
+      "productUrl": "https://www.zendure.nl/products/zendure-solarflow-2400-ac?variant=46717095903487",
+      "forumUrl": "https://gathering.tweakers.net/forum/list_messages/2281796",
+      "packages": [
+        {
+          "description": "SolarFlow 2400 AC",
+          "baseCount": 1,
+          "expansionCount": 0,
+          "offerings": [
+            {
+              "retailer": "Zendure",
+              "url": "https://www.zendure.nl/products/zendure-solarflow-2400-ac?variant=47059610042623",
+              "price": 599,
+              "p1Meter": {
+                "available": false,
+                "price": 0
+              },
+              "startDate": "2026-03-03",
+              "endDate": null
+            }
+          ]
+        },
+        {
+          "description": "SolarFlow 2400 AC +1 AB3000X",
+          "baseCount": 1,
+          "expansionCount": 1,
+          "offerings": [
+            {
+              "retailer": "Zendure",
+              "url": "https://www.zendure.nl/products/zendure-solarflow-2400-ac?variant=46717095903487",
+              "price": 1329,
+              "p1Meter": {
+                "available": false,
+                "price": 0
+              },
+              "startDate": "2026-03-03",
+              "endDate": null
+            }
+          ]
+        },
+        {
+          "description": "SolarFlow 2400 AC +2 AB3000X",
+          "baseCount": 1,
+          "expansionCount": 2,
+          "offerings": [
+            {
+              "retailer": "Zendure",
+              "url": "https://www.zendure.nl/products/zendure-solarflow-2400-ac?variant=46990380335359",
+              "price": 2058,
+              "p1Meter": {
+                "available": false,
+                "price": 0
+              },
+              "startDate": "2026-03-03",
+              "endDate": null
+            }
+          ]
+        },
+        {
+          "description": "SolarFlow 2400 AC +3 AB3000X",
+          "baseCount": 1,
+          "expansionCount": 3,
+          "offerings": [
+            {
+              "retailer": "Zendure",
+              "url": "https://www.zendure.nl/products/zendure-solarflow-2400-ac?variant=46990380368127",
+              "price": 2787,
+              "p1Meter": {
+                "available": false,
+                "price": 0
+              },
+              "startDate": "2026-03-03",
+              "endDate": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "model": "SolarFlow 2400 AC+",
+      "slug": "solarflow-2400-ac-plus",
+      "capacityWh": 2400,
+      "maxChargePowerW": 2400,
+      "maxDischargePowerW": 2400,
+      "offGridPowerW": 2400,
+      "physical": {
+        "widthMm": 326,
+        "heightMm": 251,
+        "depthMm": 294,
+        "weightKg": 27.8
+      },
+      "electrical": {
+        "chemistry": "LiFePO4",
+        "ipRating": "65"
+      },
+      "features": {
+        "offGrid": true,
+        "p1Meter": {
+          "type": null
+        }
+      },
+      "expansion": {
+        "expansionModel": "AB3000L",
+        "expansionCapacityWh": 2880,
+        "maxUnits": 5,
+        "expansionPhysical": {
+          "widthMm": 394,
+          "heightMm": 283,
+          "depthMm": 257,
+          "weightKg": 26.3
+        }
+      },
+      "packages": [
+        {
+          "description": "SolarFlow 2400 AC+",
+          "baseCount": 1,
+          "expansionCount": 0,
+          "offerings": [
+            {
+              "retailer": "Zendure",
+              "url": "https://www.zendure.nl/products/zendure-solarflow-2400-ac-plus?variant=48055928717567",
+              "price": 969,
+              "p1Meter": {
+                "available": true,
+                "price": 29
+              },
+              "startDate": "2026-03-03",
+              "endDate": null
+            }
+          ]
+        },
+        {
+          "description": "SolarFlow 2400 AC+ +1 AB3000L",
+          "baseCount": 1,
+          "expansionCount": 1,
+          "offerings": [
+            {
+              "retailer": "Zendure",
+              "url": "https://www.zendure.nl/products/zendure-solarflow-2400-ac-plus?variant=48055928520959",
+              "price": 1698,
+              "p1Meter": {
+                "available": true,
+                "price": 29
+              },
+              "startDate": "2026-03-03",
+              "endDate": null
+            }
+          ]
+        }
+      ],
+      "productUrl": "https://www.zendure.nl/products/zendure-solarflow-2400-ac-plus",
+      "forumUrl": "https://gathering.tweakers.net/forum/list_messages/2281796"
+    },
+    {
+      "model": "SolarFlow 2400 Pro",
+      "slug": "solarflow-2400-pro",
+      "capacityWh": 2400,
+      "maxChargePowerW": 2400,
+      "maxDischargePowerW": 2400,
+      "offGridPowerW": 2400,
+      "physical": {
+        "widthMm": 326,
+        "heightMm": 251,
+        "depthMm": 294,
+        "weightKg": 27.8
+      },
+      "electrical": {
+        "chemistry": "LiFePO4",
+        "ipRating": "65"
+      },
+      "features": {
+        "hasMppt": true,
+        "solarInputW": 3000,
+        "solarConnections": 4,
+        "offGrid": true,
+        "p1Meter": {
+          "type": null
+        }
+      },
+      "expansion": {
+        "expansionModel": "AB3000L",
+        "expansionCapacityWh": 2880,
+        "maxUnits": 5,
+        "expansionPhysical": null
+      },
+      "packages": [
+        {
+          "description": "Zendure SolarFlow 2400 Pro",
+          "baseCount": 1,
+          "expansionCount": 0,
+          "offerings": [
+            {
+              "retailer": "Zendure",
+              "url": "https://www.zendure.nl/products/zendure-solarflow-2400-pro?variant=48055937368319",
+              "price": 1209,
+              "p1Meter": {
+                "available": true,
+                "price": 29
+              },
+              "startDate": "2026-03-03",
+              "endDate": null
+            }
+          ]
+        },
+        {
+          "description": "Zendure SolarFlow 2400 Pro +1 AB3000L",
+          "baseCount": 1,
+          "expansionCount": 1,
+          "offerings": [
+            {
+              "retailer": "Zendure",
+              "url": "https://www.zendure.nl/products/zendure-solarflow-2400-pro?variant=48055936385279",
+              "price": 1938,
+              "p1Meter": {
+                "available": true,
+                "price": 29
+              },
+              "startDate": "2026-03-03",
+              "endDate": null
+            }
+          ]
+        },
+        {
+          "description": "Zendure SolarFlow 2400 Pro +2 AB3000L",
+          "baseCount": 1,
+          "expansionCount": 2,
+          "offerings": [
+            {
+              "retailer": "Zendure",
+              "url": "https://www.zendure.nl/products/zendure-solarflow-2400-pro?variant=48055937761535",
+              "price": 2696,
+              "p1Meter": {
+                "available": true,
+                "price": 29
+              },
+              "startDate": "2026-03-03",
+              "endDate": null
+            }
+          ]
+        },
+        {
+          "description": "Zendure SolarFlow 2400 Pro +3 AB3000L",
+          "baseCount": 1,
+          "expansionCount": 3,
+          "offerings": [
+            {
+              "retailer": "Zendure",
+              "url": "https://www.zendure.nl/products/zendure-solarflow-2400-pro?variant=48055936778495",
+              "price": 3396,
+              "p1Meter": {
+                "available": true,
+                "price": 29
+              },
+              "startDate": "2026-03-03",
+              "endDate": null
+            }
+          ]
+        },
+        {
+          "description": "Zendure SolarFlow 2400 Pro +4 AB3000L",
+          "baseCount": 1,
+          "expansionCount": 4,
+          "offerings": [
+            {
+              "retailer": "Zendure",
+              "url": "https://www.zendure.nl/products/zendure-solarflow-2400-pro?variant=48055936975103",
+              "price": 4125,
+              "p1Meter": {
+                "available": true,
+                "price": 29
+              },
+              "startDate": "2026-03-03",
+              "endDate": null
+            }
+          ]
+        },
+        {
+          "description": "Zendure SolarFlow 2400 Pro +5 AB3000L",
+          "baseCount": 1,
+          "expansionCount": 5,
+          "offerings": [
+            {
+              "retailer": "Zendure",
+              "url": "https://www.zendure.nl/products/zendure-solarflow-2400-pro?variant=48055937171711",
+              "price": 4854,
+              "p1Meter": {
+                "available": true,
+                "price": 29
+              },
+              "startDate": "2026-03-03",
+              "endDate": null
+            }
+          ]
+        }
+      ],
+      "productUrl": "https://www.zendure.nl/products/zendure-solarflow-2400-pro",
+      "forumUrl": "https://gathering.tweakers.net/forum/list_messages/2281796"
+    },
+    {
+      "model": "SolarFlow 1600 AC+",
+      "slug": "solarflow-1600-ac",
+      "capacityWh": 1920,
+      "maxChargePowerW": 1400,
+      "maxDischargePowerW": 1400,
+      "offGridPowerW": 1400,
+      "physical": {
+        "widthMm": null,
+        "heightMm": null,
+        "depthMm": null,
+        "weightKg": null
+      },
+      "electrical": {
+        "chemistry": "LiFePO4",
+        "ipRating": "65"
+      },
+      "features": {
+        "offGrid": true,
+        "p1Meter": {
+          "type": null
+        }
+      },
+      "expansion": {
+        "expansionModel": "AB2000X",
+        "expansionCapacityWh": 1920,
+        "maxUnits": 5,
+        "expansionPhysical": {
+          "widthMm": null,
+          "heightMm": null,
+          "depthMm": null,
+          "weightKg": null
+        }
+      },
+      "packages": [
+        {
+          "description": "SolarFlow 1600 AC+",
+          "baseCount": 1,
+          "expansionCount": 0,
+          "offerings": [
+            {
+              "retailer": "Zendure",
+              "url": "https://www.zendure.nl/products/zendure-solarflow-1600-ac",
+              "price": 729,
+              "p1Meter": {
+                "available": false,
+                "price": 0
+              },
+              "startDate": "2026-03-03",
+              "endDate": null
+            }
+          ]
+        }
+      ],
+      "productUrl": "https://www.zendure.nl/products/zendure-solarflow-1600-ac",
+      "forumUrl": "https://gathering.tweakers.net/forum/list_messages/2281796"
+    }
+  ]
+}

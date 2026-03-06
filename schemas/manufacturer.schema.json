@@ -1,0 +1,190 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "manufacturer.schema.json",
+  "title": "Manufacturer",
+  "description": "Tier 1: per-manufacturer battery data for editing",
+  "type": "object",
+  "required": ["manufacturer", "slug", "website", "batteries"],
+  "additionalProperties": false,
+  "properties": {
+    "manufacturer": {
+      "type": "string",
+      "description": "Display name of the manufacturer"
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$",
+      "description": "URL-safe identifier"
+    },
+    "website": {
+      "type": "string",
+      "format": "uri",
+      "description": "Manufacturer website URL"
+    },
+    "batteries": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/Battery" }
+    }
+  },
+  "$defs": {
+    "Battery": {
+      "type": "object",
+      "required": ["model", "slug", "capacityWh", "maxChargePowerW", "maxDischargePowerW"],
+      "additionalProperties": false,
+      "properties": {
+        "model": {
+          "type": "string",
+          "description": "Model name"
+        },
+        "slug": {
+          "type": "string",
+          "pattern": "^[a-z0-9-]+$",
+          "description": "URL-safe model identifier"
+        },
+        "capacityWh": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Base battery capacity in Wh"
+        },
+        "maxChargePowerW": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Maximum charge power in W"
+        },
+        "maxDischargePowerW": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Maximum discharge power in W"
+        },
+        "offGridPowerW": {
+          "type": ["integer", "null"],
+          "minimum": 0,
+          "description": "Off-grid output power in W"
+        },
+        "offGridPeakPowerW": {
+          "type": ["integer", "null"],
+          "minimum": 0,
+          "description": "Off-grid peak output power in W"
+        },
+        "physical": { "$ref": "#/$defs/Physical" },
+        "electrical": { "$ref": "#/$defs/Electrical" },
+        "features": { "$ref": "#/$defs/Features" },
+        "expansion": { "$ref": "#/$defs/Expansion" },
+        "packages": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/Package" }
+        },
+        "productUrl": {
+          "type": "string",
+          "format": "uri",
+          "description": "Product page URL"
+        },
+        "forumUrl": {
+          "type": ["string", "null"],
+          "format": "uri",
+          "description": "Discussion forum URL"
+        }
+      }
+    },
+    "Physical": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "widthMm": { "type": ["integer", "null"], "minimum": 0 },
+        "heightMm": { "type": ["integer", "null"], "minimum": 0 },
+        "depthMm": { "type": ["integer", "null"], "minimum": 0 },
+        "weightKg": { "type": ["number", "null"], "minimum": 0 }
+      }
+    },
+    "Electrical": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "chemistry": { "type": "string", "default": "LiFePO4" },
+        "cycleLife": { "type": ["integer", "null"], "minimum": 0 },
+        "warrantyYears": { "type": ["integer", "null"], "minimum": 0 },
+        "ipRating": { "type": ["string", "null"] },
+        "efficiencyPercent": { "type": ["number", "null"], "minimum": 0, "maximum": 100 },
+        "noiseDb": { "type": ["number", "null"], "minimum": 0 },
+        "depthOfDischargePercent": { "type": ["number", "null"], "minimum": 0, "maximum": 100, "description": "Depth of discharge in %" },
+        "certifications": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "Features": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "hasMppt": { "type": "boolean", "default": false },
+        "solarInputW": { "type": ["integer", "null"], "minimum": 0 },
+        "solarConnections": { "type": ["integer", "null"], "minimum": 0 },
+        "offGrid": { "type": "boolean", "default": false },
+        "p1Meter": { "$ref": "#/$defs/P1Meter" },
+        "app": { "type": ["string", "null"] },
+        "ups": { "type": "boolean", "default": false },
+        "upsSwitchMs": { "type": ["integer", "null"], "minimum": 0, "description": "UPS switching time in milliseconds" }
+      }
+    },
+    "P1Meter": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": { "type": ["string", "null"] }
+      }
+    },
+    "Expansion": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "properties": {
+        "expansionModel": { "type": ["string", "null"] },
+        "expansionCapacityWh": { "type": ["integer", "null"], "minimum": 0 },
+        "maxUnits": { "type": ["integer", "null"], "minimum": 0 },
+        "expansionPhysical": {
+          "oneOf": [
+            { "$ref": "#/$defs/Physical" },
+            { "type": "null" }
+          ]
+        }
+      }
+    },
+    "Package": {
+      "type": "object",
+      "required": ["description", "offerings"],
+      "additionalProperties": false,
+      "properties": {
+        "description": { "type": "string" },
+        "baseCount": { "type": "integer", "minimum": 1, "default": 1 },
+        "expansionCount": { "type": "integer", "minimum": 0, "default": 0 },
+        "offerings": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/Offering" }
+        }
+      }
+    },
+    "Offering": {
+      "type": "object",
+      "required": ["retailer", "url", "price", "startDate"],
+      "additionalProperties": false,
+      "properties": {
+        "retailer": { "type": "string" },
+        "url": { "type": "string", "format": "uri" },
+        "price": { "type": "number", "minimum": 0 },
+        "p1Meter": { "$ref": "#/$defs/OfferingP1Meter" },
+        "startDate": { "type": "string", "format": "date", "description": "Offering valid from (YYYY-MM-DD)" },
+        "endDate": { "type": ["string", "null"], "format": "date", "description": "Offering valid until (YYYY-MM-DD), null = no end" }
+      }
+    },
+    "OfferingP1Meter": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "available": { "type": "boolean", "default": false, "description": "Whether the shop offers a P1 meter with this package" },
+        "price": { "type": "number", "minimum": 0, "default": 0, "description": "Additional cost for P1 meter (0 = included free)" }
+      }
+    }
+  }
+}

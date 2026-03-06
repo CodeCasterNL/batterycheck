@@ -1,0 +1,144 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "catalog.schema.json",
+  "title": "Catalog",
+  "description": "Tier 2: compiled flat array of batteries for runtime use",
+  "type": "object",
+  "required": ["generatedAt", "batteries"],
+  "additionalProperties": false,
+  "properties": {
+    "generatedAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO timestamp of when the catalog was compiled"
+    },
+    "batteries": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/CatalogBattery" }
+    }
+  },
+  "$defs": {
+    "CatalogBattery": {
+      "type": "object",
+      "required": ["id", "manufacturer", "manufacturerSlug", "model", "modelSlug", "capacityWh"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique ID: manufacturer-slug--model-slug"
+        },
+        "manufacturer": { "type": "string" },
+        "manufacturerSlug": { "type": "string" },
+        "manufacturerWebsite": { "type": "string", "format": "uri" },
+        "model": { "type": "string" },
+        "modelSlug": { "type": "string" },
+        "capacityWh": { "type": "integer", "minimum": 0 },
+        "maxChargePowerW": { "type": "integer", "minimum": 0 },
+        "maxDischargePowerW": { "type": "integer", "minimum": 0 },
+        "offGridPowerW": { "type": ["integer", "null"] },
+        "offGridPeakPowerW": { "type": ["integer", "null"] },
+        "physical": { "$ref": "#/$defs/CatalogPhysical" },
+        "electrical": { "$ref": "#/$defs/CatalogElectrical" },
+        "features": { "$ref": "#/$defs/CatalogFeatures" },
+        "expansion": { "$ref": "#/$defs/CatalogExpansion" },
+        "packages": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/CatalogPackage" }
+        },
+        "productUrl": { "type": ["string", "null"] },
+        "forumUrl": { "type": ["string", "null"] },
+        "computed": { "$ref": "#/$defs/ComputedFields" }
+      }
+    },
+    "CatalogPhysical": {
+      "type": "object",
+      "properties": {
+        "widthMm": { "type": ["integer", "null"] },
+        "heightMm": { "type": ["integer", "null"] },
+        "depthMm": { "type": ["integer", "null"] },
+        "weightKg": { "type": ["number", "null"] }
+      }
+    },
+    "CatalogElectrical": {
+      "type": "object",
+      "properties": {
+        "chemistry": { "type": "string" },
+        "cycleLife": { "type": ["integer", "null"] },
+        "warrantyYears": { "type": ["integer", "null"] },
+        "ipRating": { "type": ["string", "null"] },
+        "efficiencyPercent": { "type": ["number", "null"] },
+        "noiseDb": { "type": ["number", "null"] },
+        "depthOfDischargePercent": { "type": ["number", "null"] },
+        "certifications": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "CatalogFeatures": {
+      "type": "object",
+      "properties": {
+        "hasMppt": { "type": "boolean" },
+        "solarInputW": { "type": ["integer", "null"] },
+        "solarConnections": { "type": ["integer", "null"] },
+        "offGrid": { "type": "boolean" },
+        "p1Meter": { "$ref": "#/$defs/CatalogP1Meter" },
+        "app": { "type": ["string", "null"] },
+        "ups": { "type": "boolean" },
+        "upsSwitchMs": { "type": ["integer", "null"] }
+      }
+    },
+    "CatalogP1Meter": {
+      "type": "object",
+      "properties": {
+        "type": { "type": ["string", "null"] }
+      }
+    },
+    "CatalogExpansion": {
+      "type": ["object", "null"],
+      "properties": {
+        "expansionModel": { "type": ["string", "null"] },
+        "expansionCapacityWh": { "type": ["integer", "null"] },
+        "maxUnits": { "type": ["integer", "null"] },
+        "expansionPhysical": { "$ref": "#/$defs/CatalogPhysical" }
+      }
+    },
+    "CatalogPackage": {
+      "type": "object",
+      "properties": {
+        "description": { "type": "string" },
+        "baseCount": { "type": "integer" },
+        "expansionCount": { "type": "integer" },
+        "offerings": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/CatalogOffering" }
+        }
+      }
+    },
+    "CatalogOffering": {
+      "type": "object",
+      "properties": {
+        "retailer": { "type": "string" },
+        "url": { "type": "string", "format": "uri" },
+        "price": { "type": "number" },
+        "p1Meter": { "$ref": "#/$defs/CatalogOfferingP1Meter" }
+      }
+    },
+    "CatalogOfferingP1Meter": {
+      "type": "object",
+      "properties": {
+        "available": { "type": "boolean" },
+        "price": { "type": "number" }
+      }
+    },
+    "ComputedFields": {
+      "type": "object",
+      "required": ["capacityKwh", "hasSolar", "isExpandable"],
+      "additionalProperties": false,
+      "properties": {
+        "capacityKwh": { "type": "number", "description": "capacityWh / 1000 for display" },
+        "hasSolar": { "type": "boolean" },
+        "isExpandable": { "type": "boolean" },
+        "maxCapacityWh": { "type": ["integer", "null"] },
+        "maxCapacityKwh": { "type": ["number", "null"] }
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "manufacturer": "HomeWizard",
+  "slug": "homewizard",
+  "website": "https://www.homewizard.com",
+  "batteries": [
+    {
+      "model": "Plug-In Battery",
+      "slug": "plug-in-battery",
+      "capacityWh": 2688,
+      "maxChargePowerW": 800,
+      "maxDischargePowerW": 800,
+      "offGridPowerW": null,
+      "physical": {
+        "widthMm": 400,
+        "heightMm": 300,
+        "depthMm": 200,
+        "weightKg": 25
+      },
+      "electrical": {
+        "chemistry": "LiFePO4",
+        "cycleLife": 6000,
+        "noiseDb": 34
+      },
+      "features": {
+        "offGrid": false,
+        "p1Meter": {
+          "type": "HomeWizard P1"
+        }
+      },
+      "expansion": null,
+      "productUrl": "https://www.homewizard.com/nl/shop/plug-in-battery/",
+      "forumUrl": "https://gathering.tweakers.net/forum/list_messages/2285226",
+      "packages": [
+        {
+          "description": "Plug-In Battery",
+          "baseCount": 1,
+          "expansionCount": 0,
+          "offerings": [
+            {
+              "retailer": "HomeWizard",
+              "url": "https://www.homewizard.com/nl/shop/plug-in-battery/",
+              "price": 1195,
+              "p1Meter": {
+                "available": true,
+                "price": 24.95
+              },
+              "startDate": "2026-03-03",
+              "endDate": null
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "manufacturer": "Lunergy",
+  "slug": "lunergy",
+  "website": "https://lunergypower.nl",
+  "batteries": [
+    {
+      "model": "X2400 AC",
+      "slug": "x2400-ac",
+      "capacityWh": 2560,
+      "maxChargePowerW": 800,
+      "maxDischargePowerW": 800,
+      "offGridPowerW": 2400,
+      "offGridPeakPowerW": 4800,
+      "physical": {
+        "widthMm": 520,
+        "heightMm": 345,
+        "depthMm": 360,
+        "weightKg": 40
+      },
+      "electrical": {
+        "chemistry": "LiFePO4",
+        "cycleLife": 8000,
+        "warrantyYears": 10,
+        "ipRating": "65",
+        "efficiencyPercent": 92,
+        "noiseDb": 45
+      },
+      "features": {
+        "offGrid": true,
+        "ups": true,
+        "upsSwitchMs": 10,
+        "p1Meter": {
+          "type": null
+        }
+      },
+      "expansion": {
+        "expansionModel": "EB2500",
+        "expansionCapacityWh": 2560,
+        "maxUnits": 4,
+        "expansionPhysical": {
+          "widthMm": 520,
+          "heightMm": 220,
+          "depthMm": 360,
+          "weightKg": 32.6
+        }
+      },
+      "productUrl": "https://lunergypower.nl/products/lunergy-plug-in-thuisbatterij",
+      "forumUrl": "https://gathering.tweakers.net/forum/list_messages/2311714",
+      "packages": [
+        {
+          "description": "X2400 AC",
+          "baseCount": 1,
+          "expansionCount": 0,
+          "offerings": [
+            {
+              "retailer": "Lunergy",
+              "url": "https://lunergypower.nl/products/lunergy-plug-in-thuisbatterij",
+              "price": 1649,
+              "p1Meter": { "available": true, "price": 0 },
+              "startDate": "2026-03-03",
+              "endDate": null
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

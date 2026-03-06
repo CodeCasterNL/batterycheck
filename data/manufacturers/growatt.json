@@ -1,0 +1,142 @@
+{
+  "manufacturer": "Growatt",
+  "slug": "growatt",
+  "website": "https://nl.growatt.com/",
+  "batteries": [
+    {
+      "model": "NEXA 2000",
+      "slug": "nexa-2000",
+      "capacityWh": 2048,
+      "maxChargePowerW": 800,
+      "maxDischargePowerW": 800,
+      "physical": {
+        "widthMm": 406,
+        "heightMm": 290,
+        "depthMm": 255,
+        "weightKg": 24
+      },
+      "electrical": {
+        "chemistry": "LiFePO4",
+        "ipRating": "66"
+      },
+      "features": {
+        "offGrid": true,
+        "p1Meter": {
+          "type": "Eco Tracker"
+        },
+        "solarInputW": 2600,
+        "hasMppt": true
+      },
+      "expansion": {
+        "expansionModel": "NEXA 2000 expansion",
+        "expansionCapacityWh": 2048,
+        "maxUnits": 1,
+        "expansionPhysical": {
+          "widthMm": 406,
+          "heightMm": 270,
+          "depthMm": 235,
+          "weightKg": 20
+        }
+      },
+      "offGridPowerW": 800,
+      "productUrl": "https://nl.growatt.com/products/nexa-2000-plug-in-batterij",
+      "forumUrl": "https://gathering.tweakers.net/forum/list_messages/2289252",
+      "packages": [
+        {
+          "description": "NEXA 2000",
+          "baseCount": 1,
+          "expansionCount": 0,
+          "offerings": [
+            {
+              "retailer": "Stralend Groen",
+              "url": "https://www.stralendgroen.nl/en/product/growatt-nexa-2000/",
+              "price": 595,
+              "p1Meter": {
+                "available": false,
+                "price": 0
+              },
+              "startDate": "2026-03-03",
+              "endDate": null
+            },
+            {
+              "retailer": "Thuisbatterij",
+              "url": "https://thuisbatterij.nl/winkel/growatt-nexa-2000/",
+              "price": 799,
+              "p1Meter": {
+                "available": true,
+                "price": 49
+              },
+              "startDate": "2026-03-03",
+              "endDate": null
+            }
+          ]
+        },
+        {
+          "description": "NEXA 2000 +1 EXP",
+          "baseCount": 1,
+          "expansionCount": 1,
+          "offerings": [
+            {
+              "retailer": "Stralend Groen",
+              "url": "https://www.stralendgroen.nl/en/product/growatt-nexa-2000/",
+              "price": 1004.09,
+              "p1Meter": {
+                "available": false,
+                "price": 0
+              },
+              "startDate": "2026-03-03",
+              "endDate": null
+            },
+            {
+              "retailer": "Thuisbatterij",
+              "url": "https://thuisbatterij.nl/winkel/growatt-nexa-2000/?attribute_opslagcapaciteit=NEXA2000+%26+1X+2000WH+expansion+pack&attribute_slimme-meter=Zonder+meter+bestellen",
+              "price": 1350,
+              "p1Meter": {
+                "available": true,
+                "price": 50
+              },
+              "startDate": "2026-03-03",
+              "endDate": null
+            }
+          ]
+        },
+        {
+          "description": "NEXA 2000 +2 EXP",
+          "baseCount": 1,
+          "expansionCount": 2,
+          "offerings": [
+            {
+              "retailer": "Thuisbatterij",
+              "url": "https://thuisbatterij.nl/winkel/growatt-nexa-2000/?attribute_opslagcapaciteit=NEXA2000+%26+2X+2000WH+expansion+pack&attribute_slimme-meter=Zonder+meter+bestellen",
+              "price": 1985,
+              "p1Meter": {
+                "available": true,
+                "price": 30
+              },
+              "startDate": "2026-03-03",
+              "endDate": null
+            }
+          ]
+        },
+        {
+          "description": "NEXA 2000 +3 EXP",
+          "baseCount": 1,
+          "expansionCount": 3,
+          "offerings": [
+            {
+              "retailer": "Thuisbatterij",
+              "url": "https://thuisbatterij.nl/winkel/growatt-nexa-2000/?attribute_opslagcapaciteit=NEXA2000+%26+3X+2000WH+expansion+pack&attribute_slimme-meter=Zonder+meter+bestellen",
+              "price": 2500,
+              "p1Meter": {
+                "available": true,
+                "price": 50
+              },
+              "startDate": "2026-03-03",
+              "endDate": null
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

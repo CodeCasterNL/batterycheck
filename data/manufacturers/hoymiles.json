@@ -1,0 +1,56 @@
+{
+  "manufacturer": "Hoymiles",
+  "slug": "hoymiles",
+  "website": "https://www.hoymiles.com",
+  "batteries": [
+    {
+      "model": "MS-A2",
+      "slug": "ms-a2",
+      "capacityWh": 2240,
+      "maxChargePowerW": 800,
+      "maxDischargePowerW": 800,
+      "offGridPowerW": 800,
+      "offGridPeakPowerW": 1200,
+      "physical": {
+        "widthMm": 455,
+        "heightMm": 457,
+        "depthMm": 220,
+        "weightKg": 32
+      },
+      "electrical": {
+        "chemistry": "LiFePO4",
+        "cycleLife": 6000,
+        "ipRating": "65"
+      },
+      "features": {
+        "offGrid": true,
+        "p1Meter": {
+          "type": "EcoTracker"
+        }
+      },
+      "expansion": null,
+      "productUrl": "https://thuisbatterij.nl/winkel/hoymiles-ms-a2/",
+      "forumUrl": "https://gathering.tweakers.net/forum/list_messages/2127650",
+      "packages": [
+        {
+          "description": "MS-A2",
+          "baseCount": 1,
+          "expansionCount": 0,
+          "offerings": [
+            {
+              "retailer": "Thuisbatterij.nl",
+              "url": "https://thuisbatterij.nl/winkel/hoymiles-ms-a2/",
+              "price": 859,
+              "p1Meter": {
+                "available": true,
+                "price": 30
+              },
+              "startDate": "2026-03-03",
+              "endDate": null
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

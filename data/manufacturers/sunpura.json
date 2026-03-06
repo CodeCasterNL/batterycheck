@@ -1,0 +1,60 @@
+{
+  "manufacturer": "SunPura",
+  "slug": "sunpura",
+  "website": "https://www.sunpura.com",
+  "batteries": [
+    {
+      "model": "S2400",
+      "slug": "s2400",
+      "capacityWh": 0,
+      "maxChargePowerW": 800,
+      "maxDischargePowerW": 800,
+      "offGridPowerW": null,
+      "physical": {
+        "widthMm": null,
+        "heightMm": null,
+        "depthMm": null,
+        "weightKg": null
+      },
+      "features": {
+        "offGrid": false,
+        "p1Meter": {
+          "type": null
+        }
+      },
+      "expansion": {
+        "expansionModel": "B2400",
+        "expansionCapacityWh": 2400,
+        "maxUnits": 4,
+        "expansionPhysical": {
+          "widthMm": 450,
+          "heightMm": 290,
+          "depthMm": 287,
+          "weightKg": 30
+        }
+      },
+      "productUrl": "https://www.stralendgroen.nl/product/sunpura-s2400-stekkerbatterij/",
+      "forumUrl": "https://gathering.tweakers.net/forum/list_messages/2310200",
+      "packages": [
+        {
+          "description": "S2400",
+          "baseCount": 1,
+          "expansionCount": 1,
+          "offerings": [
+            {
+              "retailer": "Stralend Groen",
+              "url": "https://www.stralendgroen.nl/product/sunpura-s2400-stekkerbatterij/",
+              "price": 966.50,
+              "p1Meter": {
+                "available": false,
+                "price": 0
+              },
+              "startDate": "2026-03-03",
+              "endDate": null
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

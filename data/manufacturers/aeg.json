@@ -1,0 +1,104 @@
+{
+  "manufacturer": "AEG",
+  "slug": "aeg",
+  "website": "https://aegthuisbatterij.nl",
+  "batteries": [
+    {
+      "model": "Solarcube AS-BBL09",
+      "slug": "solarcube-as-bbl09",
+      "capacityWh": 0,
+      "maxChargePowerW": 2400,
+      "maxDischargePowerW": 800,
+      "offGridPowerW": 2400,
+      "offGridPeakPowerW": 3600,
+      "physical": {
+        "widthMm": 450,
+        "heightMm": 638,
+        "depthMm": 292,
+        "weightKg": 12.7
+      },
+      "electrical": {
+        "chemistry": "LiFePO4",
+        "cycleLife": 6000,
+        "warrantyYears": 10,
+        "ipRating": "65",
+        "certifications": ["CE/EMC", "RF", "LVD", "VDE 4105/0126", "EN 50549", "C10/11", "CEI 0-21"]
+      },
+      "features": {
+        "offGrid": true,
+        "p1Meter": {
+          "type": "HomeWizard P1"
+        }
+      },
+      "expansion": {
+        "expansionModel": "AS-BML09",
+        "expansionCapacityWh": 4800,
+        "maxUnits": 3,
+        "expansionPhysical": {
+          "widthMm": null,
+          "heightMm": null,
+          "depthMm": null,
+          "weightKg": 47
+        }
+      },
+      "productUrl": "https://aegthuisbatterij.nl/products/aeg-as-bbl09",
+      "forumUrl": null,
+      "packages": [
+        {
+          "description": "Base (4,8 kWh)",
+          "baseCount": 1,
+          "expansionCount": 1,
+          "offerings": [
+            {
+              "retailer": "AEG Thuisbatterij",
+              "url": "https://aegthuisbatterij.nl/products/aeg-as-bbl09",
+              "price": 1750,
+              "p1Meter": {
+                "available": true,
+                "price": 29
+              },
+              "startDate": "2026-03-03",
+              "endDate": null
+            }
+          ]
+        },
+        {
+          "description": "Base +1 (9,6 kWh)",
+          "baseCount": 1,
+          "expansionCount": 2,
+          "offerings": [
+            {
+              "retailer": "AEG Thuisbatterij",
+              "url": "https://aegthuisbatterij.nl/products/aeg-as-bbl09",
+              "price": 2950,
+              "p1Meter": {
+                "available": true,
+                "price": 29
+              },
+              "startDate": "2026-03-03",
+              "endDate": null
+            }
+          ]
+        },
+        {
+          "description": "Base +2 (14,4 kWh)",
+          "baseCount": 1,
+          "expansionCount": 3,
+          "offerings": [
+            {
+              "retailer": "AEG Thuisbatterij",
+              "url": "https://aegthuisbatterij.nl/products/aeg-as-bbl09",
+              "price": 4150,
+              "p1Meter": {
+                "available": true,
+                "price": 29
+              },
+              "startDate": "2026-03-03",
+              "endDate": null
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

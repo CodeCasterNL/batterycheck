@@ -1,0 +1,32 @@
+{
+  "name": "batterycheck",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "admin": "vite --open /admin.html",
+    "generate-types": "tsx scripts/generate-types.ts",
+    "compile": "tsx scripts/compile-data.ts",
+    "prebuild": "npm run generate-types && npm run compile",
+    "build": "vue-tsc -b && vite build && tsx scripts/generate-pages.ts",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.5.25",
+    "vue-router": "^4.5.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "@vitejs/plugin-vue": "^6.0.2",
+    "@vue/tsconfig": "^0.8.1",
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "glob": "^11.0.1",
+    "json-schema-to-typescript": "^15.0.4",
+    "tsx": "^4.19.4",
+    "typescript": "~5.9.3",
+    "vite": "^7.3.1",
+    "vue-tsc": "^3.1.5"
+  }
+}

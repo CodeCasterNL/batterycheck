@@ -1,0 +1,94 @@
+{
+  "manufacturer": "Marstek",
+  "slug": "marstek",
+  "website": "https://www.marstek.com",
+  "batteries": [
+    {
+      "model": "Venus E 3.0",
+      "slug": "venus-e-3-0",
+      "capacityWh": 5120,
+      "maxChargePowerW": 2500,
+      "maxDischargePowerW": 2500,
+      "offGridPowerW": 2500,
+      "offGridPeakPowerW": 3500,
+      "physical": {
+        "widthMm": 480,
+        "heightMm": 624,
+        "depthMm": 153,
+        "weightKg": 60
+      },
+      "electrical": {
+        "chemistry": "LiFePO4",
+        "cycleLife": 6000,
+        "ipRating": "65",
+        "efficiencyPercent": 93.5,
+        "depthOfDischargePercent": 90,
+        "certifications": ["NFEN50549-1", "VDE4105/0124", "G98", "CE10-21", "PETREE", "EN50549-1/-2", "TORR25"]
+      },
+      "features": {
+        "offGrid": true,
+        "p1Meter": {
+          "type": null
+        }
+      },
+      "expansion": null,
+      "productUrl": "https://www.reichelt.com/nl/nl/shop/product/pv-opslag_marstek_venus-e_3_0_ac_5120_wh-412120",
+      "forumUrl": "https://gathering.tweakers.net/forum/list_messages/2262054",
+      "packages": [
+        {
+          "description": "Venus E 3.0",
+          "baseCount": 1,
+          "expansionCount": 0,
+          "offerings": [
+            {
+              "retailer": "Reichelt",
+              "url": "https://www.reichelt.com/nl/nl/shop/product/pv-opslag_marstek_venus-e_3_0_ac_5120_wh-412120",
+              "price": 1269.29,
+              "p1Meter": { "available": true, "price": 0 },
+              "startDate": "2026-03-03",
+              "endDate": null
+            },
+            {
+              "retailer": "Marstek",
+              "url": "https://www.marstek.nl/product/marstek-venus-e-3-0-plug-charge-thuisbatterij-5-12-kwh-incl-p1-meter/",
+              "price": 1200,
+              "p1Meter": { "available": true, "price": 0 },
+              "startDate": "2026-03-03",
+              "endDate": null
+            }
+          ]
+        },
+        {
+          "description": "Venus E 3.0 10.24 kWh",
+          "baseCount": 2,
+          "expansionCount": 0,
+          "offerings": [
+            {
+              "retailer": "Marstek",
+              "url": "https://www.marstek.nl/product/marstek-venus-e-3-0-plug-charge-thuisbatterij-5-12-kwh-incl-p1-meter/",
+              "price": 2375,
+              "p1Meter": { "available": true, "price": 0 },
+              "startDate": "2026-03-03",
+              "endDate": null
+            }
+          ]
+        },
+        {
+          "description": "Venus E 3.0 15.36 kWh",
+          "baseCount": 3,
+          "expansionCount": 0,
+          "offerings": [
+            {
+              "retailer": "Marstek",
+              "url": "https://www.marstek.nl/product/marstek-venus-e-3-0-plug-charge-thuisbatterij-5-12-kwh-incl-p1-meter/",
+              "price": 3550,
+              "p1Meter": { "available": true, "price": 0 },
+              "startDate": "2026-03-03",
+              "endDate": null
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

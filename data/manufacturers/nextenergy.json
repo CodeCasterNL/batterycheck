@@ -1,0 +1,57 @@
+{
+  "manufacturer": "NextEnergy",
+  "slug": "nextenergy",
+  "website": "https://www.nextenergy.nl",
+  "batteries": [
+    {
+      "model": "Terugverdien Batterij",
+      "slug": "terugverdien-batterij",
+      "capacityWh": 2112,
+      "maxChargePowerW": 1200,
+      "maxDischargePowerW": 800,
+      "offGridPowerW": 1200,
+      "physical": {
+        "widthMm": 285,
+        "heightMm": 255,
+        "depthMm": 420,
+        "weightKg": 25.3
+      },
+      "features": {
+        "offGrid": true,
+        "p1Meter": {
+          "type": "Earn-e P1"
+        }
+      },
+      "expansion": {
+        "expansionModel": "Uitbreiding",
+        "expansionCapacityWh": 2112,
+        "maxUnits": 4,
+        "expansionPhysical": {
+          "widthMm": null,
+          "heightMm": 240,
+          "depthMm": null,
+          "weightKg": 24
+        }
+      },
+      "productUrl": "https://www.nextenergy.nl/smart-home/plug-in-batterij",
+      "forumUrl": "https://gathering.tweakers.net/forum/list_messages/2311116",
+      "packages": [
+        {
+          "description": "Terugverdien Batterij",
+          "baseCount": 1,
+          "expansionCount": 0,
+          "offerings": [
+            {
+              "retailer": "NextEnergy",
+              "url": "https://www.nextenergy.nl/smart-home/plug-in-batterij",
+              "price": 999,
+              "p1Meter": { "available": true, "price": 0 },
+              "startDate": "2026-03-03",
+              "endDate": null
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

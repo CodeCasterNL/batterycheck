@@ -1,0 +1,357 @@
+{
+  "manufacturer": "Indevolt",
+  "slug": "indevolt",
+  "website": "https://nl.indevolt.com",
+  "batteries": [
+    {
+      "model": "BK1600 Ultra",
+      "slug": "bk1600-ultra",
+      "capacityWh": 1636,
+      "maxChargePowerW": 800,
+      "maxDischargePowerW": 800,
+      "offGridPowerW": 1200,
+      "offGridPeakPowerW": 1800,
+      "physical": {
+        "widthMm": 300,
+        "heightMm": 250,
+        "depthMm": 215,
+        "weightKg": 16
+      },
+      "electrical": {
+        "chemistry": "LiFePO4",
+        "ipRating": "54"
+      },
+      "features": {
+        "hasMppt": true,
+        "solarInputW": 1200,
+        "solarConnections": 2,
+        "offGrid": true,
+        "ups": true,
+        "upsSwitchMs": 10,
+        "p1Meter": {
+          "type": "Solarman P1"
+        }
+      },
+      "expansion": null,
+      "productUrl": "https://nl.indevolt.com/products/bk1600-ultra-thuisbatterij-met-zonnestroom",
+      "forumUrl": "https://gathering.tweakers.net/forum/list_messages/2312502",
+      "packages": [
+        {
+          "description": "BK1600 Ultra",
+          "baseCount": 1,
+          "expansionCount": 0,
+          "offerings": [
+            {
+              "retailer": "Indevolt",
+              "url": "https://nl.indevolt.com/products/bk1600-ultra-thuisbatterij-met-zonnestroom",
+              "price": 499,
+              "p1Meter": {
+                "available": true,
+                "price": 0
+              },
+              "startDate": "2026-03-03",
+              "endDate": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "model": "SolidFlex 2000",
+      "slug": "solidflex-2000",
+      "capacityWh": 1792,
+      "maxChargePowerW": 800,
+      "maxDischargePowerW": 800,
+      "offGridPowerW": 2400,
+      "physical": {
+        "widthMm": 425,
+        "heightMm": 260,
+        "depthMm": 195,
+        "weightKg": 21.5
+      },
+      "electrical": {
+        "chemistry": "LiFePO4",
+        "ipRating": "65"
+      },
+      "features": {
+        "hasMppt": true,
+        "solarInputW": 2400,
+        "solarConnections": 4,
+        "offGrid": true,
+        "p1Meter": {
+          "type": "Solarman P1"
+        }
+      },
+      "expansion": {
+        "expansionModel": "SFA1800",
+        "expansionCapacityWh": 1792,
+        "maxUnits": 5,
+        "expansionPhysical": {
+          "widthMm": 425,
+          "heightMm": 260,
+          "depthMm": 195,
+          "weightKg": 19.5
+        }
+      },
+      "productUrl": "https://nl.indevolt.com/products/solidflex-2000-thuisbatterij-met-zonnestroom-en-halfvaste-lifepo4-batterij",
+      "forumUrl": "https://gathering.tweakers.net/forum/list_messages/2312502",
+      "packages": [
+        {
+          "description": "SolidFlex 2000",
+          "baseCount": 1,
+          "expansionCount": 0,
+          "offerings": [
+            {
+              "retailer": "Indevolt",
+              "url": "https://nl.indevolt.com/products/solidflex-2000-thuisbatterij-met-zonnestroom-en-halfvaste-lifepo4-batterij",
+              "price": 799,
+              "p1Meter": {
+                "available": true,
+                "price": 0
+              },
+              "startDate": "2026-03-03",
+              "endDate": null
+            }
+          ]
+        },
+        {
+          "description": "SolidFlex 2000 +1 SFA1800",
+          "baseCount": 1,
+          "expansionCount": 1,
+          "offerings": [
+            {
+              "retailer": "Indevolt",
+              "url": "https://nl.indevolt.com/products/solidflex-2000-thuisbatterij-met-zonnestroom-en-halfvaste-lifepo4-batterij",
+              "price": 1398,
+              "p1Meter": {
+                "available": true,
+                "price": 0
+              },
+              "startDate": "2026-03-03",
+              "endDate": null
+            }
+          ]
+        },
+        {
+          "description": "SolidFlex 2000 +2 SFA1800",
+          "baseCount": 1,
+          "expansionCount": 2,
+          "offerings": [
+            {
+              "retailer": "Indevolt",
+              "url": "https://nl.indevolt.com/products/solidflex-2000-thuisbatterij-met-zonnestroom-en-halfvaste-lifepo4-batterij",
+              "price": 1997,
+              "p1Meter": {
+                "available": true,
+                "price": 0
+              },
+              "startDate": "2026-03-03",
+              "endDate": null
+            }
+          ]
+        },
+        {
+          "description": "SolidFlex 2000 +3 SFA1800",
+          "baseCount": 1,
+          "expansionCount": 3,
+          "offerings": [
+            {
+              "retailer": "Indevolt",
+              "url": "https://nl.indevolt.com/products/solidflex-2000-thuisbatterij-met-zonnestroom-en-halfvaste-lifepo4-batterij",
+              "price": 2596,
+              "p1Meter": {
+                "available": true,
+                "price": 0
+              },
+              "startDate": "2026-03-03",
+              "endDate": null
+            }
+          ]
+        },
+        {
+          "description": "SolidFlex 2000 +4 SFA1800",
+          "baseCount": 1,
+          "expansionCount": 4,
+          "offerings": [
+            {
+              "retailer": "Indevolt",
+              "url": "https://nl.indevolt.com/products/solidflex-2000-thuisbatterij-met-zonnestroom-en-halfvaste-lifepo4-batterij",
+              "price": 3195,
+              "p1Meter": {
+                "available": true,
+                "price": 0
+              },
+              "startDate": "2026-03-03",
+              "endDate": null
+            }
+          ]
+        },
+        {
+          "description": "SolidFlex 2000 +5 SFA1800",
+          "baseCount": 1,
+          "expansionCount": 5,
+          "offerings": [
+            {
+              "retailer": "Indevolt",
+              "url": "https://nl.indevolt.com/products/solidflex-2000-thuisbatterij-met-zonnestroom-en-halfvaste-lifepo4-batterij",
+              "price": 3794,
+              "p1Meter": {
+                "available": true,
+                "price": 0
+              },
+              "startDate": "2026-03-03",
+              "endDate": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "model": "SolidFlex 2000 ECO",
+      "slug": "solidflex-2000-eco",
+      "capacityWh": 1792,
+      "maxChargePowerW": 800,
+      "maxDischargePowerW": 800,
+      "offGridPowerW": 2400,
+      "physical": {
+        "widthMm": 425,
+        "heightMm": 260,
+        "depthMm": 195,
+        "weightKg": 21.5
+      },
+      "electrical": {
+        "chemistry": "LiFePO4",
+        "ipRating": "65"
+      },
+      "features": {
+        "offGrid": true,
+        "p1Meter": {
+          "type": null
+        }
+      },
+      "expansion": {
+        "expansionModel": "SFA1800",
+        "expansionCapacityWh": 1792,
+        "maxUnits": 5,
+        "expansionPhysical": {
+          "widthMm": 425,
+          "heightMm": 260,
+          "depthMm": 195,
+          "weightKg": 19.5
+        }
+      },
+      "productUrl": "https://nl.indevolt.com/products/indevolt-solidflex-2000-eco-thuisbatterij-met-zonnestroom-en-halfvaste-lifepo-batterij",
+      "forumUrl": "https://gathering.tweakers.net/forum/list_messages/2312502",
+      "packages": [
+        {
+          "description": "SolidFlex 2000 ECO",
+          "baseCount": 1,
+          "expansionCount": 0,
+          "offerings": [
+            {
+              "retailer": "Indevolt",
+              "url": "https://nl.indevolt.com/products/indevolt-solidflex-2000-eco-thuisbatterij-met-zonnestroom-en-halfvaste-lifepo-batterij",
+              "price": 699,
+              "p1Meter": {
+                "available": true,
+                "price": 0
+              },
+              "startDate": "2026-03-03",
+              "endDate": null
+            }
+          ]
+        },
+        {
+          "description": "SolidFlex 2000 ECO +1 SFA1800",
+          "baseCount": 1,
+          "expansionCount": 1,
+          "offerings": [
+            {
+              "retailer": "Indevolt",
+              "url": "https://nl.indevolt.com/products/indevolt-solidflex-2000-eco-thuisbatterij-met-zonnestroom-en-halfvaste-lifepo-batterij",
+              "price": 1298,
+              "p1Meter": {
+                "available": true,
+                "price": 0
+              },
+              "startDate": "2026-03-03",
+              "endDate": null
+            }
+          ]
+        },
+        {
+          "description": "SolidFlex 2000 ECO +2 SFA1800",
+          "baseCount": 1,
+          "expansionCount": 2,
+          "offerings": [
+            {
+              "retailer": "Indevolt",
+              "url": "https://nl.indevolt.com/products/indevolt-solidflex-2000-eco-thuisbatterij-met-zonnestroom-en-halfvaste-lifepo-batterij",
+              "price": 1897,
+              "p1Meter": {
+                "available": true,
+                "price": 0
+              },
+              "startDate": "2026-03-03",
+              "endDate": null
+            }
+          ]
+        },
+        {
+          "description": "SolidFlex 2000 ECO +3 SFA1800",
+          "baseCount": 1,
+          "expansionCount": 3,
+          "offerings": [
+            {
+              "retailer": "Indevolt",
+              "url": "https://nl.indevolt.com/products/indevolt-solidflex-2000-eco-thuisbatterij-met-zonnestroom-en-halfvaste-lifepo-batterij",
+              "price": 2496,
+              "p1Meter": {
+                "available": true,
+                "price": 0
+              },
+              "startDate": "2026-03-03",
+              "endDate": null
+            }
+          ]
+        },
+        {
+          "description": "SolidFlex 2000 ECO +4 SFA1800",
+          "baseCount": 1,
+          "expansionCount": 4,
+          "offerings": [
+            {
+              "retailer": "Indevolt",
+              "url": "https://nl.indevolt.com/products/indevolt-solidflex-2000-eco-thuisbatterij-met-zonnestroom-en-halfvaste-lifepo-batterij",
+              "price": 3095,
+              "p1Meter": {
+                "available": true,
+                "price": 0
+              },
+              "startDate": "2026-03-03",
+              "endDate": null
+            }
+          ]
+        },
+        {
+          "description": "SolidFlex 2000 ECO +5 SFA1800",
+          "baseCount": 1,
+          "expansionCount": 5,
+          "offerings": [
+            {
+              "retailer": "Indevolt",
+              "url": "https://nl.indevolt.com/products/indevolt-solidflex-2000-eco-thuisbatterij-met-zonnestroom-en-halfvaste-lifepo-batterij",
+              "price": 3694,
+              "p1Meter": {
+                "available": true,
+                "price": 0
+              },
+              "startDate": "2026-03-03",
+              "endDate": null
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
