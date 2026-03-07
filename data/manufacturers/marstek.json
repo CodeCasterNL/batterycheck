@@ -24,7 +24,15 @@
         "ipRating": "65",
         "efficiencyPercent": 93.5,
         "depthOfDischargePercent": 90,
-        "certifications": ["NFEN50549-1", "VDE4105/0124", "G98", "CE10-21", "PETREE", "EN50549-1/-2", "TORR25"]
+        "certifications": [
+          "NFEN50549-1",
+          "VDE4105/0124",
+          "G98",
+          "CE10-21",
+          "PETREE",
+          "EN50549-1/-2",
+          "TORR25"
+        ]
       },
       "features": {
         "offGrid": true,
@@ -45,7 +53,10 @@
               "retailer": "Reichelt",
               "url": "https://www.reichelt.com/nl/nl/shop/product/pv-opslag_marstek_venus-e_3_0_ac_5120_wh-412120",
               "price": 1269.29,
-              "p1Meter": { "available": true, "price": 0 },
+              "p1Meter": {
+                "available": true,
+                "price": 0
+              },
               "startDate": "2026-03-03",
               "endDate": null
             },
@@ -53,8 +64,22 @@
               "retailer": "Marstek",
               "url": "https://www.marstek.nl/product/marstek-venus-e-3-0-plug-charge-thuisbatterij-5-12-kwh-incl-p1-meter/",
               "price": 1200,
-              "p1Meter": { "available": true, "price": 0 },
+              "p1Meter": {
+                "available": true,
+                "price": 0
+              },
               "startDate": "2026-03-03",
+              "endDate": null
+            },
+            {
+              "retailer": "Thuisbatterij.nl",
+              "url": "https://thuisbatterij.nl/winkel/marstek-venus-e-versie-3/",
+              "price": 1200,
+              "p1Meter": {
+                "available": true,
+                "price": 20
+              },
+              "startDate": "2026-03-07",
               "endDate": null
             }
           ]
@@ -68,8 +93,22 @@
               "retailer": "Marstek",
               "url": "https://www.marstek.nl/product/marstek-venus-e-3-0-plug-charge-thuisbatterij-5-12-kwh-incl-p1-meter/",
               "price": 2375,
-              "p1Meter": { "available": true, "price": 0 },
+              "p1Meter": {
+                "available": true,
+                "price": 0
+              },
               "startDate": "2026-03-03",
+              "endDate": null
+            },
+            {
+              "retailer": "Thuisbatterij.nl",
+              "url": "https://thuisbatterij.nl/winkel/marstek-venus-e-versie-3/?attribute_pa_opslagcapaciteit=marstek-venus-e-v-3-10-kwh-meest-gekozen-optie",
+              "price": 2365,
+              "p1Meter": {
+                "available": true,
+                "price": 20
+              },
+              "startDate": "2026-03-07",
               "endDate": null
             }
           ]
@@ -83,8 +122,22 @@
               "retailer": "Marstek",
               "url": "https://www.marstek.nl/product/marstek-venus-e-3-0-plug-charge-thuisbatterij-5-12-kwh-incl-p1-meter/",
               "price": 3550,
-              "p1Meter": { "available": true, "price": 0 },
+              "p1Meter": {
+                "available": true,
+                "price": 0
+              },
               "startDate": "2026-03-03",
+              "endDate": null
+            },
+            {
+              "retailer": "Thuisbatterij.nl",
+              "url": "https://thuisbatterij.nl/winkel/marstek-venus-e-versie-3/?attribute_pa_opslagcapaciteit=marstek-venus-e-v3-3x-15kwh",
+              "price": 3499,
+              "p1Meter": {
+                "available": true,
+                "price": 20
+              },
+              "startDate": "2026-03-07",
               "endDate": null
             }
           ]
