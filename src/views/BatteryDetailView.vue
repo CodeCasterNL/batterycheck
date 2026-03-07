@@ -4,7 +4,7 @@ import { useRoute } from 'vue-router'
 import { useCatalog } from '../composables/useCatalog'
 import { pkgCapacityWh, formatPkgLabel } from '../composables/usePackageSelection'
 import { formatEur, formatEurDecimal, mmToCm } from '../utils/format'
-import type { CatalogBattery, CatalogPackage } from '../types/generated'
+import type { CatalogBattery, CatalogPackage, CatalogOffering } from '../types/generated'
 
 const route = useRoute()
 const { batteries } = useCatalog()
@@ -19,6 +19,13 @@ function pricePerKwh(price: number, b: CatalogBattery, pkg: CatalogPackage): str
   const wh = pkgCapacityWh(b, pkg)
   if (wh <= 0) return '-'
   return formatEurDecimal(price / (wh / 1000))
+}
+
+/*
+* Returns a copy of the offerings, sorted by total price (ascending).
+*/
+function sortedOfferings(offerings: CatalogOffering[]): CatalogOffering[] {
+  return [...(offerings ?? [])].sort((a, b) => a.price! - b.price!);
 }
 
 // Set page title (client-side only)
@@ -163,15 +170,18 @@ if (typeof document !== 'undefined') {
               {{ (pkgCapacityWh(battery, pkg) / 1000).toLocaleString('nl-NL') }} kWh
             </span>
           </div>
-          <div class="pkg-offerings">
-            <div v-for="(o, oi) in pkg.offerings ?? []" :key="oi" class="offering-row">
+          <div class="pkg-offerings" v-if="pkg.offerings">
+            <div v-for="(o, oi) in sortedOfferings(pkg.offerings) ?? []" :key="oi" class="offering-row">
               <a :href="o.url" target="_blank" rel="noopener" class="offering-retailer">{{ o.retailer }}</a>
               <span class="offering-price">{{ formatEur(o.price) }}</span>
-              <span class="offering-pkwh">{{ pricePerKwh(o.price!, battery, pkg) }}/kWh</span>
               <span v-if="o.p1Meter?.available" class="offering-p1">
-                P1: {{ (o.p1Meter?.price ?? 0) > 0 ? formatEur(o.p1Meter?.price) : 'gratis' }}
+                (P1: {{ (o.p1Meter?.price ?? 0) > 0 ? formatEur(o.p1Meter?.price) : 'gratis' }})
               </span>
+              <span class="offering-pkwh">{{ pricePerKwh(o.price!, battery, pkg) }}/kWh</span>
             </div>
+          </div>
+          <div v-else>
+            Geen aanbiedingen gevonden.
           </div>
         </div>
       </div>

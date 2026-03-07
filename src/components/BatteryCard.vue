@@ -39,8 +39,7 @@ const { toggle, isSelected } = useComparison()
 }
 
 .card-link {
-  text-decoration: none;
-  color: inherit;
+  text-decoration: underline;
   display: block;
 }
 

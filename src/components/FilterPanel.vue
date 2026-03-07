@@ -27,7 +27,7 @@ const sortOptions = Object.entries(sortLabels) as [SortOption, string][]
         <div class="filter-section">
           <span class="section-title">Kenmerken</span>
           <div class="toggle-group">
-            <FilterToggle v-model="filters.hasSolar" label="Solar input" />
+            <FilterToggle v-model="filters.hasSolar" label="Zonne-invoer" />
             <FilterToggle v-model="filters.isExpandable" label="Uitbreidbaar" />
             <FilterToggle v-model="filters.offGrid" label="Off-grid" />
           </div>

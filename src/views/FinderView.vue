@@ -355,8 +355,7 @@ const databaseQuery = computed(() => {
         <div v-for="(r, i) in results" :key="i" class="result-card surface">
           <div class="rc-top">
             <router-link :to="`/batterij/${r.battery.manufacturerSlug}/${r.battery.modelSlug}`" class="rc-identity">
-              <strong>{{ r.battery.manufacturer }}</strong>
-              <span class="rc-model">{{ r.battery.model }}</span>
+              <strong>{{ r.battery.manufacturer }} {{ r.battery.model }}</strong>
             </router-link>
             <span class="rc-price-kwh">{{ formatEurDecimal(r.pricePerKwh) }}/kWh</span>
           </div>
@@ -614,20 +613,12 @@ const databaseQuery = computed(() => {
   align-items: baseline;
   gap: 0.4rem;
   min-width: 0;
-  text-decoration: none;
-  color: inherit;
+  text-decoration: underline;
 }
 .rc-identity:hover strong {
   color: var(--color-primary);
 }
 .rc-identity strong { font-size: 0.92rem; }
-.rc-model {
-  color: var(--color-text-muted);
-  font-size: 0.85rem;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
 .rc-price-kwh {
   font-weight: 700;
   font-size: 0.92rem;
