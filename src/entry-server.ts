@@ -15,14 +15,20 @@ function createSsrRouter() {
         path: '/batterij/:mfr/:model',
         name: 'battery-detail',
         component: () => import('./views/BatteryDetailView.vue'),
+        meta: { needsCatalog: true },
+      },
+      {
+        path: '/faq',
+        name: 'faq',
+        component: () => import('./views/FaqView.vue'),
       },
     ],
   })
 }
 
-export async function render(url: string, catalogBatteries: CatalogBattery[]): Promise<string> {
+export async function render(url: string, catalogBatteries?: CatalogBattery[]): Promise<string> {
   resetCatalog()
-  setCatalogData(catalogBatteries)
+  if (catalogBatteries) setCatalogData(catalogBatteries)
 
   const app = createSSRApp(App)
   const router = createSsrRouter()

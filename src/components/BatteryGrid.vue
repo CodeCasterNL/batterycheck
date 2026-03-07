@@ -18,7 +18,8 @@ const specSections = [
     rows: [
       { key: 'manufacturer', label: 'Merk' },
       { key: 'capacityKwh', label: 'Basiscapaciteit' },
-      { key: 'maxChargePowerW', label: 'Laadvermogen' },
+      { key: 'nominalChargePowerW', label: 'Nominaal laadvermogen' },
+      { key: 'maxChargePowerW', label: 'Max. laadvermogen', faqHash: 'maximaal-laadvermogen', faqTitle: 'Wat is het maximale laadvermogen?' },
       { key: 'maxDischargePowerW', label: 'Ontlaadvermogen' },
       { key: 'expansion', label: 'Uitbreidbaar' },
       { key: 'forumUrl', label: 'Forum' },
@@ -70,7 +71,7 @@ const specSections = [
   {
     label: 'Connectiviteit',
     rows: [
-      { key: 'p1Meter', label: 'P1-meter' },
+      { key: 'p1Meter', label: 'P1-meter', faqHash: 'p1-meter', faqTitle: 'Wat is een P1-meter?' },
     ],
   },
 ]
@@ -185,6 +186,8 @@ function pkgOfferings(battery: CatalogBattery): CatalogOffering[] {
               :key="row.key"
               :spec-key="row.key"
               :label="row.label"
+              :faq-hash="row.faqHash"
+              :faq-title="row.faqTitle"
               :batteries="batteries"
             />
           </template>

@@ -1,10 +1,13 @@
 <script setup lang="ts">
 import type { CatalogBattery } from '../types/generated'
 import { mmToCm } from '../utils/format'
+import HelpLink from './HelpLink.vue'
 
 const props = defineProps<{
   specKey: string
   label: string
+  faqHash?: string
+  faqTitle?: string
   batteries: CatalogBattery[]
 }>()
 
@@ -139,7 +142,7 @@ function getValue(battery: CatalogBattery): string {
 
 <template>
   <tr>
-    <td class="label-col">{{ label }}</td>
+    <td class="label-col">{{ label }} <HelpLink v-if="faqHash" :hash="faqHash" :title="faqTitle" /></td>
     <template v-if="isLinkKey(specKey)">
       <td v-for="b in batteries" :key="b.id">
         <a

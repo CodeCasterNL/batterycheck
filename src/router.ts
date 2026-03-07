@@ -9,24 +9,31 @@ const routes = [
     path: '/zoek',
     name: 'finder',
     component: () => import('./views/FinderView.vue'),
-    meta: { title: `Welke batterij voor mij? - ${baseTitle}` },
+    meta: { title: `Welke batterij voor mij? - ${baseTitle}`, needsCatalog: true },
   },
   {
     path: '/database',
     name: 'database',
     component: () => import('./views/DatabaseView.vue'),
-    meta: { title: `Alle batterijen - ${baseTitle}` },
+    meta: { title: `Alle batterijen - ${baseTitle}`, needsCatalog: true },
   },
   {
     path: '/vergelijk',
     name: 'compare',
     component: () => import('./views/CompareView.vue'),
-    meta: { title: `Vergelijking - ${baseTitle}` },
+    meta: { title: `Vergelijking - ${baseTitle}`, needsCatalog: true },
   },
   {
     path: '/batterij/:mfr/:model',
     name: 'battery-detail',
     component: () => import('./views/BatteryDetailView.vue'),
+    meta: { needsCatalog: true },
+  },
+  {
+    path: '/faq',
+    name: 'faq',
+    component: () => import('./views/FaqView.vue'),
+    meta: { title: `Veelgestelde Vragen - ${baseTitle}` },
   },
 ]
 

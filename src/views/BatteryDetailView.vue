@@ -5,6 +5,7 @@ import { useCatalog } from '../composables/useCatalog'
 import { pkgCapacityWh, formatPkgLabel } from '../composables/usePackageSelection'
 import { formatEur, formatEurDecimal, mmToCm } from '../utils/format'
 import type { CatalogBattery, CatalogPackage, CatalogOffering } from '../types/generated'
+import HelpLink from '../components/HelpLink.vue'
 
 const route = useRoute()
 const { batteries } = useCatalog()
@@ -80,8 +81,9 @@ if (typeof document !== 'undefined') {
         <dl class="spec-list">
           <div class="spec-item"><dt>Merk</dt><dd>{{ battery.manufacturer }}</dd></div>
           <div class="spec-item"><dt>Model</dt><dd>{{ battery.model }}</dd></div>
-          <div class="spec-item"><dt>Basiscapaciteit</dt><dd>{{ battery.computed?.capacityKwh?.toLocaleString('nl-NL') ?? '-' }} kWh</dd></div>
-          <div class="spec-item"><dt>Laadvermogen</dt><dd>{{ battery.maxChargePowerW?.toLocaleString('nl-NL') ?? '-' }} W</dd></div>
+          <div class="spec-item"><dt>Basiscapaciteit</dt><dd>{{ battery.computed?.capacityKwh ? `${battery.computed.capacityKwh.toLocaleString('nl-NL')} kWh` : '-' }}</dd></div>
+          <div class="spec-item"><dt>Nominaal laadvermogen</dt><dd>{{ battery.nominalChargePowerW?.toLocaleString('nl-NL') ?? '-' }} W</dd></div>
+          <div class="spec-item"><dt>Max. laadvermogen <HelpLink hash="maximaal-laadvermogen" title="Wat is het maximale laadvermogen?" /></dt><dd>{{ battery.maxChargePowerW?.toLocaleString('nl-NL') ?? '-' }} W</dd></div>
           <div class="spec-item"><dt>Ontlaadvermogen</dt><dd>{{ battery.maxDischargePowerW?.toLocaleString('nl-NL') ?? '-' }} W</dd></div>
         </dl>
       </section>
@@ -153,7 +155,7 @@ if (typeof document !== 'undefined') {
       <section class="spec-section surface">
         <h3>Connectiviteit</h3>
         <dl class="spec-list">
-          <div class="spec-item"><dt>P1-meter</dt><dd>{{ battery.features?.p1Meter?.type ?? '-' }}</dd></div>
+          <div class="spec-item"><dt>P1-meter <HelpLink hash="p1-meter" title="Wat is een P1-meter?" /></dt><dd>{{ battery.features?.p1Meter?.type ?? '-' }}</dd></div>
           <div class="spec-item"><dt>App</dt><dd>{{ battery.features?.app ?? '-' }}</dd></div>
         </dl>
       </section>

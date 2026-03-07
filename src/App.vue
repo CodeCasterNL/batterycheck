@@ -5,8 +5,7 @@ import { useRoute } from 'vue-router'
 const { isLoading, error } = useCatalog()
 const route = useRoute()
 
-// Landing page doesn't need catalog data
-const needsCatalog = () => route.path !== '/'
+const needsCatalog = () => !!route.meta.needsCatalog
 </script>
 
 <template>
@@ -27,6 +26,7 @@ const needsCatalog = () => route.path !== '/'
         <nav class="header-nav">
           <router-link to="/zoek" active-class="nav-active">Welke batterij voor mij?</router-link>
           <router-link to="/database" active-class="nav-active">Bekijk alle modellen</router-link>
+          <router-link to="/faq" active-class="nav-active">Veelgestelde Vragen</router-link>
         </nav>
       </div>
     </header>

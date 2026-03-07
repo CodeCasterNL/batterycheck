@@ -41,7 +41,9 @@ async function main() {
   const batteries: CatalogBattery[] = catalog.batteries
   const template = readFileSync(indexPath, 'utf-8')
 
-  // 1. SSR build: compile entry-server.ts into a Node-importable bundle
+  /*
+  * SSR build: compile entry-server.ts into a Node-importable bundle
+  */
   console.log('Building SSR bundle...')
   await build({
     root: ROOT,
@@ -53,10 +55,11 @@ async function main() {
     },
   })
 
-  // 2. Import the SSR render function
   const { render } = await import(`file://${resolve(SSR_OUT, 'entry-server.js').replace(/\\/g, '/')}`)
 
-  // 3. Render homepage
+  /*
+  * Render Homepage.
+  */
   const homeHtml = await render('/', batteries)
   const homeMeta = `<title>Battery Check - Thuisbatterijvergelijker</title>\n    <meta name="description" content="Vergelijk thuisbatterijen: vind de beste thuisbatterij voor jouw situatie. Objectief, onafhankelijk en actueel." />`
   const homePage = template
@@ -65,11 +68,28 @@ async function main() {
   writeFileSync(indexPath, homePage, 'utf-8')
   console.log('Generated: index.html (SSR homepage)')
 
-  // 4. 404.html for GitHub Pages SPA fallback
+  /*
+  * Render FAQ.
+  */
+  const faqHtml = await render('/faq')
+  const faqMeta = `<title>Veelgestelde Vragen - Battery Check - Thuisbatterijvergelijker</title>\n    <meta name="description" content="Vergelijk thuisbatterijen: veelgestelde vragen over thuisbatterijen, zoals 'Wat is een P1-meter?' en 'Wat is het maximale laadvermogen?'." />`
+  const faqPage = template
+    .replace(/<title>.*?<\/title>/, faqMeta)
+    .replace('<div id="app"></div>', `<div id="app">${faqHtml}</div>`)
+  const faqPath = resolve(DIST, 'faq', 'index.html')
+  mkdirSync(dirname(faqPath), { recursive: true })
+  writeFileSync(faqPath, faqPage, 'utf-8')
+  console.log('Generated: faq/index.html')
+
+  /*
+  * 404.html for GitHub Pages SPA fallback.
+  */
   writeFileSync(resolve(DIST, '404.html'), template, 'utf-8')
   console.log('Generated: 404.html (SPA fallback)')
 
-  // 5. Per-battery detail pages
+  /*
+  * Per-battery detail pages.
+  */
   let count = 0
   for (const b of batteries) {
     const url = `/batterij/${b.manufacturerSlug}/${b.modelSlug}`
@@ -91,7 +111,9 @@ async function main() {
   }
   console.log(`Generated: ${count} battery detail pages (SSR)`)
 
-  // 6. Cleanup SSR build artifacts
+  /*
+  * Clean up SSR build artifacts.
+  */
   rmSync(SSR_OUT, { recursive: true, force: true })
 }
 
