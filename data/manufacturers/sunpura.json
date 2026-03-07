@@ -19,7 +19,7 @@
       "features": {
         "offGrid": false,
         "p1Meter": {
-          "type": null
+          "type": " Sunpura Smart Meter"
         }
       },
       "expansion": {
@@ -37,19 +37,117 @@
       "forumUrl": "https://gathering.tweakers.net/forum/list_messages/2310200",
       "packages": [
         {
-          "description": "S2400",
+          "description": "S2400 + 1xB2400",
           "baseCount": 1,
           "expansionCount": 1,
           "offerings": [
             {
               "retailer": "Stralend Groen",
               "url": "https://www.stralendgroen.nl/product/sunpura-s2400-stekkerbatterij/",
-              "price": 966.50,
+              "price": 1035.50,
+              "p1Meter": {
+                "available": true,
+                "price": 69
+              },
+              "startDate": "2026-03-07",
+              "endDate": null
+            },
+            {
+              "retailer": "My Green Energy",
+              "url": "https://mygreenenergy.nl/product/sunpura-s2400-all-in-one-plug-and-play-24-kwh-batterij/",
+              "price": 966.79,
               "p1Meter": {
                 "available": false,
                 "price": 0
               },
-              "startDate": "2026-03-03",
+              "startDate": "2026-03-07",
+              "endDate": null
+            }
+          ]
+        },
+        {
+          "description": "S2400 + 2xB2400",
+          "baseCount": 1,
+          "expansionCount": 2,
+          "offerings": [
+            {
+              "retailer": "Stralend Groen",
+              "url": "https://www.stralendgroen.nl/product/sunpura-s2400-stekkerbatterij/",
+              "price": 1578.50,
+              "p1Meter": {
+                "available": true,
+                "price": 69
+              },
+              "startDate": "2026-03-07",
+              "endDate": null
+            },
+            {
+              "retailer": "My Green Energy",
+              "url": "https://mygreenenergy.nl/product/sunpura-s2400-all-in-one-plug-and-play-48-kwh-opslag/",
+              "price": 1509.58,
+              "p1Meter": {
+                "available": false,
+                "price": 0
+              },
+              "startDate": "2026-03-07",
+              "endDate": null
+            }
+          ]
+        },
+        {
+          "description": "S2400 + 3xB2400",
+          "baseCount": 1,
+          "expansionCount": 3,
+          "offerings": [
+            {
+              "retailer": "Stralend Groen",
+              "url": "https://www.stralendgroen.nl/product/sunpura-s2400-stekkerbatterij/",
+              "price": 2121.50,
+              "p1Meter": {
+                "available": true,
+                "price": 69
+              },
+              "startDate": "2026-03-07",
+              "endDate": null
+            },
+            {
+              "retailer": "My Green Energy",
+              "url": "https://mygreenenergy.nl/product/sunpura-s2400-all-in-one-plug-and-play-72-kwh-opslag/",
+              "price": 2052.89,
+              "p1Meter": {
+                "available": false,
+                "price": 0
+              },
+              "startDate": "2026-03-07",
+              "endDate": null
+            }
+          ]
+        },
+        {
+          "description": "S2400 + 4xB2400",
+          "baseCount": 1,
+          "expansionCount": 4,
+          "offerings": [
+            {
+              "retailer": "Stralend Groen",
+              "url": "https://www.stralendgroen.nl/product/sunpura-s2400-stekkerbatterij/",
+              "price": 2664.50,
+              "p1Meter": {
+                "available": true,
+                "price": 69
+              },
+              "startDate": "2026-03-07",
+              "endDate": null
+            },
+            {
+              "retailer": "My Green Energy",
+              "url": "https://mygreenenergy.nl/product/sunpura-9-6-kwh-thuisbatterij/",
+              "price": 2595.85,
+              "p1Meter": {
+                "available": false,
+                "price": 0
+              },
+              "startDate": "2026-03-07",
               "endDate": null
             }
           ]
