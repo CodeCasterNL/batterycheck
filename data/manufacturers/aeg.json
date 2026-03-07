@@ -42,7 +42,7 @@
         }
       },
       "productUrl": "https://aegthuisbatterij.nl/products/aeg-as-bbl09",
-      "forumUrl": null,
+      "forumUrl": "https://gathering.tweakers.net/forum/list_messages/2310200",
       "packages": [
         {
           "description": "Base (4,8 kWh)",
@@ -58,6 +58,17 @@
                 "price": 29
               },
               "startDate": "2026-03-03",
+              "endDate": null
+            },
+            {
+              "retailer": "AH Voordeelshop (SolarNRG)",
+              "url": "https://voordeelshop.ah.nl/smart-home/666/aeg-solarcube-plug-in-thuisbatterij/393975/aeg-solarcube-plug-in-thuisbatterij-48-kwh/393977/",
+              "price": 1449,
+              "p1Meter": {
+                "available": false,
+                "price": 0
+              },
+              "startDate": "2026-03-07",
               "endDate": null
             }
           ]
@@ -77,6 +88,17 @@
               },
               "startDate": "2026-03-03",
               "endDate": null
+            },
+            {
+              "retailer": "AH Voordeelshop (SolarNRG)",
+              "url": "https://voordeelshop.ah.nl/smart-home/666/aeg-solarcube-plug-in-thuisbatterij/393975/aeg-solarcube-plug-in-thuisbatterij-96-kwh/393978/",
+              "price": 2549,
+              "p1Meter": {
+                "available": false,
+                "price": 0
+              },
+              "startDate": "2026-03-07",
+              "endDate": null
             }
           ]
         },
@@ -94,6 +116,17 @@
                 "price": 29
               },
               "startDate": "2026-03-03",
+              "endDate": null
+            },
+            {
+              "retailer": "AH Voordeelshop (SolarNRG)",
+              "url": "https://voordeelshop.ah.nl/smart-home/666/aeg-solarcube-plug-in-thuisbatterij/393975/aeg-solarcube-plug-in-thuisbatterij-144-kwh/393979/",
+              "price": 3649,
+              "p1Meter": {
+                "available": false,
+                "price": 0
+              },
+              "startDate": "2026-03-07",
               "endDate": null
             }
           ]
