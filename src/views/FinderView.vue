@@ -6,6 +6,7 @@ import { pkgCapacityWh, formatPkgLabel } from '../composables/usePackageSelectio
 import { useDatasetRanges } from '../composables/useDatasetRanges'
 import FilterSlider from '../components/FilterSlider.vue'
 import CollapsibleMobile from '../components/CollapsibleMobile.vue'
+import FilterResults from '../components/FilterResults.vue'
 import { formatEur, formatEurDecimal } from '../utils/format'
 import type { CatalogBattery, CatalogPackage, CatalogOffering } from '../types/generated'
 
@@ -241,6 +242,7 @@ const results = computed<ResultEntry[]>(() => {
 const totalMatchingFeatures = computed(() =>
   allEntries.value.filter(e => matchesFeatures(e.battery)).length,
 )
+const resultBatteryCount = computed(() => new Set(results.value.map(r => r.battery.id)).size)
 const outsideRange = computed(() => totalMatchingFeatures.value - results.value.length)
 
 const databaseQuery = computed(() => {
@@ -334,18 +336,14 @@ const databaseQuery = computed(() => {
         </CollapsibleMobile>
       </div>
 
-      <div class="results-header">
-        <div class="results-counts">
-          <span class="result-count">{{ results.length }} resultaat{{ results.length === 1 ? '' : 'en' }}</span>
-          <span v-if="outsideRange > 0" class="outside-count">{{ outsideRange }} buiten filterbereik</span>
-        </div>
+      <FilterResults :count="resultBatteryCount" :variant-count="results.length" :outside-range="outsideRange">
         <div class="results-actions">
           <button class="btn btn-secondary btn-sm" @click="restart">Opnieuw zoeken</button>
           <router-link :to="{ path: '/database', query: databaseQuery }" class="btn btn-primary btn-sm">
-            Bekijk in database
+            Bekijk alle modellen
           </router-link>
         </div>
-      </div>
+      </FilterResults>
 
       <div v-if="results.length === 0" class="no-results surface">
         Geen batterijen gevonden met deze criteria. Pas je filters hierboven aan.
@@ -558,31 +556,9 @@ const databaseQuery = computed(() => {
 .filter-options input[type="checkbox"] { display: none; }
 
 /* Results header */
-.results-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-.results-counts {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-}
 .results-actions {
   display: flex;
   gap: 0.4rem;
-}
-.result-count {
-  font-size: 0.85rem;
-  color: var(--color-text-muted);
-  font-weight: 500;
-}
-.outside-count {
-  font-size: 0.78rem;
-  color: var(--color-accent);
-  font-weight: 500;
 }
 .no-results {
   text-align: center;
