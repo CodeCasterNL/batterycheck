@@ -33,6 +33,7 @@
         "model": { "type": "string" },
         "modelSlug": { "type": "string" },
         "capacityWh": { "type": "integer", "minimum": 0 },
+        "nominalChargePowerW": { "type": "integer", "minimum": 0 },
         "maxChargePowerW": { "type": "integer", "minimum": 0 },
         "maxDischargePowerW": { "type": "integer", "minimum": 0 },
         "offGridPowerW": { "type": ["integer", "null"] },

@@ -7,6 +7,7 @@
       "model": "Terugverdien Batterij",
       "slug": "terugverdien-batterij",
       "capacityWh": 2112,
+      "nominalChargePowerW": 800,
       "maxChargePowerW": 1200,
       "maxDischargePowerW": 800,
       "offGridPowerW": 1200,

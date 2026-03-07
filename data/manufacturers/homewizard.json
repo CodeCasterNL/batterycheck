@@ -7,6 +7,7 @@
       "model": "Plug-In Battery",
       "slug": "plug-in-battery",
       "capacityWh": 2688,
+      "nominalChargePowerW": 800,
       "maxChargePowerW": 800,
       "maxDischargePowerW": 800,
       "offGridPowerW": null,

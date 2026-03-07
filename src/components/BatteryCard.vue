@@ -39,7 +39,6 @@ const { toggle, isSelected } = useComparison()
 }
 
 .card-link {
-  text-decoration: underline;
   display: block;
 }
 
@@ -53,6 +52,7 @@ const { toggle, isSelected } = useComparison()
   line-height: 1.3;
   color: var(--color-text);
   transition: color 0.15s;
+  text-decoration: underline;
 }
 
 .card-manufacturer {

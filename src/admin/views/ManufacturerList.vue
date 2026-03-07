@@ -76,6 +76,7 @@ function createNew() {
         model: '',
         slug: '',
         capacityWh: 0,
+        nominalChargePowerW: 0,
         maxChargePowerW: 0,
         maxDischargePowerW: 0,
       },

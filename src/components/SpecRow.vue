@@ -50,6 +50,10 @@ function getValue(battery: CatalogBattery): string {
       return battery.computed?.capacityKwh
         ? `${battery.computed.capacityKwh.toLocaleString('nl-NL')} kWh`
         : '-'
+    case 'nominalChargePowerW':
+      return battery.nominalChargePowerW
+        ? `${battery.nominalChargePowerW.toLocaleString('nl-NL')} W`
+        : '-'
     case 'maxChargePowerW':
       return `${battery.maxChargePowerW?.toLocaleString('nl-NL') ?? '-'} W`
     case 'maxDischargePowerW':

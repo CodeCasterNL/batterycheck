@@ -51,7 +51,8 @@ if (typeof document !== 'undefined') {
       <div>
         <h2>{{ battery.manufacturer }} {{ battery.model }}</h2>
         <p class="subtitle">
-          {{ battery.computed?.capacityKwh?.toLocaleString('nl-NL') }} kWh basiscapaciteit
+          <template v-if="battery.computed?.capacityKwh">{{ battery.computed.capacityKwh.toLocaleString('nl-NL') }} kWh basiscapaciteit</template>
+          <template v-else>Geen basiscapaciteit</template>
           <template v-if="battery.computed?.maxCapacityKwh && battery.computed.maxCapacityKwh !== battery.computed.capacityKwh">
             &middot; tot {{ battery.computed.maxCapacityKwh.toLocaleString('nl-NL') }} kWh uitbreidbaar
           </template>

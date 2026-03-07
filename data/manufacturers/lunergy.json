@@ -7,6 +7,7 @@
       "model": "X2400 AC",
       "slug": "x2400-ac",
       "capacityWh": 2560,
+      "nominalChargePowerW": 800,
       "maxChargePowerW": 800,
       "maxDischargePowerW": 800,
       "offGridPowerW": 2400,

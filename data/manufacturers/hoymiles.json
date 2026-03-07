@@ -7,6 +7,7 @@
       "model": "MS-A2",
       "slug": "ms-a2",
       "capacityWh": 2240,
+      "nominalChargePowerW": 800,
       "maxChargePowerW": 800,
       "maxDischargePowerW": 800,
       "offGridPowerW": 800,

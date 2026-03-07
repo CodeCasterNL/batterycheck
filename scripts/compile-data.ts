@@ -19,6 +19,7 @@ interface BatteryInput {
   model: string
   slug: string
   capacityWh: number
+  nominalChargePowerW: number
   maxChargePowerW: number
   maxDischargePowerW: number
   offGridPowerW?: number | null
@@ -145,6 +146,7 @@ function main() {
         model: battery.model,
         modelSlug: battery.slug,
         capacityWh: battery.capacityWh,
+        nominalChargePowerW: battery.nominalChargePowerW,
         maxChargePowerW: battery.maxChargePowerW,
         maxDischargePowerW: battery.maxDischargePowerW,
         offGridPowerW: battery.offGridPowerW ?? null,

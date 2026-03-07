@@ -7,6 +7,7 @@
       "model": "Solarcube AS-BBL09",
       "slug": "solarcube-as-bbl09",
       "capacityWh": 0,
+      "nominalChargePowerW": 800,
       "maxChargePowerW": 2400,
       "maxDischargePowerW": 800,
       "offGridPowerW": 2400,

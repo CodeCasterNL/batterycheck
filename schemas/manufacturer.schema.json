@@ -30,7 +30,7 @@
   "$defs": {
     "Battery": {
       "type": "object",
-      "required": ["model", "slug", "capacityWh", "maxChargePowerW", "maxDischargePowerW"],
+      "required": ["model", "slug", "capacityWh", "nominalChargePowerW", "maxChargePowerW", "maxDischargePowerW"],
       "additionalProperties": false,
       "properties": {
         "model": {
@@ -46,6 +46,11 @@
           "type": "integer",
           "minimum": 0,
           "description": "Base battery capacity in Wh"
+        },
+        "nominalChargePowerW": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Nominal (continuous) charge power in W"
         },
         "maxChargePowerW": {
           "type": "integer",

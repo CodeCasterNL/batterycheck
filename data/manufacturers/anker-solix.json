@@ -7,6 +7,7 @@
       "model": "Solarbank 2 E1600 AC",
       "slug": "solarbank-2-e1600-ac",
       "capacityWh": 1600,
+      "nominalChargePowerW": 800,
       "maxChargePowerW": 2400,
       "maxDischargePowerW": 800,
       "offGridPowerW": 1000,

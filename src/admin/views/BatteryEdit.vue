@@ -117,7 +117,11 @@ function intOrNull(val: string): number | null {
         <input type="number" :value="battery.capacityWh" @input="battery.capacityWh = Number(($event.target as HTMLInputElement).value)" />
       </div>
       <div class="form-group">
-        <label>Laadvermogen (W)</label>
+        <label>Nominaal laadvermogen (W)</label>
+        <input type="number" :value="battery.nominalChargePowerW" @input="battery.nominalChargePowerW = Number(($event.target as HTMLInputElement).value)" />
+      </div>
+      <div class="form-group">
+        <label>Max. laadvermogen (W)</label>
         <input type="number" :value="battery.maxChargePowerW" @input="battery.maxChargePowerW = Number(($event.target as HTMLInputElement).value)" />
       </div>
       <div class="form-group">

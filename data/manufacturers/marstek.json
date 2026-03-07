@@ -7,6 +7,7 @@
       "model": "Venus E 3.0",
       "slug": "venus-e-3-0",
       "capacityWh": 5120,
+      "nominalChargePowerW": 800,
       "maxChargePowerW": 2500,
       "maxDischargePowerW": 2500,
       "offGridPowerW": 2500,

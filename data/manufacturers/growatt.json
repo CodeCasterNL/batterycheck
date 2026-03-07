@@ -7,6 +7,7 @@
       "model": "NEXA 2000",
       "slug": "nexa-2000",
       "capacityWh": 2048,
+      "nominalChargePowerW": 800,
       "maxChargePowerW": 800,
       "maxDischargePowerW": 800,
       "physical": {
